@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SQLITE DATABASE</string>
+
+    <string name="product_name">Product name</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_quantity">Enter quantity</string>
+
+
+</resources>
