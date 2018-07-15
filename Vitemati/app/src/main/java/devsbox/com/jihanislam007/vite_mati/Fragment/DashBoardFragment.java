@@ -33,7 +33,7 @@ public class DashBoardFragment extends Fragment {
     private View heroImageView;
 
     private View stickyViewSpacer;
-    private int MAX_ROWS = 20;
+    private int MAX_ROWS = 30;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
