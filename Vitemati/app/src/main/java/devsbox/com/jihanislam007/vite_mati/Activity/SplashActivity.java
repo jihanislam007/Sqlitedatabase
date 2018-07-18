@@ -11,10 +11,10 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // setContentView(R.layout.activity_splash);
-        setContentView(R.layout.custom_listview);
+        setContentView(R.layout.activity_splash);
+       // setContentView(R.layout.row_custom_listview);
 
-        /*Thread thread = new Thread(){
+        Thread thread = new Thread(){
 
             @Override
             public void run() {
@@ -27,7 +27,7 @@ public class SplashActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
-        };thread.start();*/
+        };thread.start();
 
     }
 }

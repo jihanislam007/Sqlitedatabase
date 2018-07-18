@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Vite-mati</string>
+    <string name="app_name">ভিটেমাটি</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -10,4 +10,127 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="home">হোম</string>
+    <string name="contact">যোগাযোগ</string>
+    <string name="land_list">জমির তালিকা</string>
+    <string name="change_password">পাসওয়ার্ড পরিবর্তন</string>
+
+    <string name="sell_land">জমি বিক্রি করতে চাইলে\nএখানে ক্লিক করুন</string>
+    <string name="buy_land">জমি ক্রয় করতে চাইলে\nএখানে ক্লিক করুন</string>
+    <string name="seller">বিক্রেতা</string>
+    <string name="buyer">ক্রেতা</string>
+
+    <string name="signup_seller">বিক্রেতা নিবন্ধন</string>
+    <string name="login_seller">বিক্রেতা লগ ইন</string>
+    <string name="signup_buyer">ক্রেতা নিবন্ধন</string>
+    <string name="login_buyer">ক্রেতা লগ ইন</string>
+    <string name="login_to_signup">পূর্ব নিবন্ধিত না হলে নিবন্ধন করুন</string>
+    <string name="signup_to_login">পূর্ব নিবন্ধিত হলে লগ ইন করুন</string>
+    <string name="hint_name_seller">বিক্রেতার নাম</string>
+    <string name="hint_name_buyer">ক্রেতার নাম</string>
+
+    <string name="hint_email">ইমেইল</string>
+    <string name="hint_password">পাসওয়ার্ড</string>
+    <string name="hint_mobile">মোবাইল নং</string>
+    <string name="hint_nid">এন আই ডি নং</string>
+
+    <string name="signup">নিবন্ধন করুন</string>
+    <string name="login">লগ ইন</string>
+    <string name="logout">লগ আউট</string>
+
+    <string name="welcome">স্বাগতম</string>
+    <string name="account">একাউন্ট</string>
+
+    <string name="buyer_fragment">ক্রেতা</string>
+
+    <string name="buyer_land_list">ক্রয়কৃত জমির তালিকা</string>
+
+    <string name="buyer_land_bookmark">বুকমার্ক</string>
+    <string name="bookmarked_land_list">বুকমার্ককৃত জমি</string>
+
+    <string name="seller_fragment">বিক্রেতা</string>
+    <string name="seller_land_post">জমি বিক্রয়</string>
+    <string name="seller_sold_land_list">বিক্রয়কৃত জমি</string>
+    <string name="seller_unsold_land_list">অবিক্রয়কৃত জমি</string>
+
+    <string name="contact_fragment">যোগাযোগ</string>
+    <string name="contact_address">যোগাযোগের ঠিকানা</string>
+
+    <string name="land_owner_title">মালিকের বিস্তারিত</string>
+
+    <string name="contact_number">মোবাইল নম্বর</string>
+    <string name="nid_number">এন.আই.ডি নং</string>
+    <string name="email_address">ইমেইল</string>
+
+    <string name="land_list_fragment">জমির তালিকা</string>
+    <string name="land_owner_name">মালিকের নাম</string>
+    <string name="land_owner_address">ঠিকানা</string>
+    <string name="land_price">জমির মূল্য</string>
+    <string name="land_detail">বিস্তারিত দেখুন</string>
+
+    <string name="owner_detail_title">মালিকের বিস্তারিত</string>
+    <string name="land_detail_title">জমির বিস্তারিত</string>
+    <string name="land_info">বিস্তারিত দেখুন</string>
+    <string name="land_images">বিস্তারিত দেখুন</string>
+
+
+    <string name="land_address_title">জমির অবস্থান</string>
+    <string name="land_division_name">বিভাগ</string>
+    <string name="land_district_name">জেলা</string>
+    <string name="land_police_station_name">থানা</string>
+    <string name="land_house_no">বাড়ি নং</string>
+    <string name="land_road_no">রোড নং</string>
+    <string name="land_village_name">গ্রাম</string>
+    <string name="land_post_office">ডাকঘর</string>
+    <string name="land_union">ইউনিয়ন</string>
+
+
+    <string name="land_type">জমির ধরণ</string>
+    <string name="land_detail_other">জমির অন্যান্য বিস্তারিত</string>
+    <string name="land_mouza_no">মৌজা নং</string>
+    <string name="land_jl_no">জে এল নং</string>
+    <string name="land_khatian_no">খতিয়ান নং</string>
+    <string name="land_dag_no">দাগ নং</string>
+    <string name="land_nature">জমির প্রকৃতি</string>
+    <string name="land_surrounding">জমির আশেপাশের অবস্থা</string>
+
+    <string name="change_password_fragment">পাসওয়ার্ড পরিবর্তন</string>
+    <string name="new_password">নতুন পাসওয়ার্ড</string>
+    <string name="confirm_new_password">পুনরায় নতুন পাসওয়ার্ড</string>
+    <string name="change_password_button">পরিবর্তন করুন</string>
+
+    <string name="sell_your_land">আপনার বিক্রয়যোগ্য জমিটি\nবিক্রয় করার জন্য\nনিচের + আইকনে ক্লিক করুন</string>
+
+    <string name="division_name">বিভাগ</string>
+    <string name="district_name">জেলা</string>
+    <string name="police_station_name">থানা</string>
+    <string name="search">খুঁজুন</string>
+    <string name="choose">ছবি বাছাই</string>
+    <string name="upload">আপলোড</string>
+    <string name="submit">সাবমিট</string>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">হোম</string>
+    <string name="nav_photos">Photos</string>
+    <string name="nav_movies">Movies</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">পাসওয়ার্ড পরিবর্তন</string>
+
+
+    <string name="nav_contact">যোগাযোগ</string>
+    <string name="nav_landList">জমির তালিকা</string>
+    <string name="nav_seller_land_post">জমি বিক্রয়</string>
+    <string name="nav_seller_soldable_land">বিক্রয়কৃত জমি</string>
+    <string name="nav_seller_unsold_land">অবিক্রয়কৃত জমি</string>
+    <string name="nav_buyer_land_list">ক্রয়কৃত জমির তালিকা</string>
+    <string name="nav_buyer_land_bookmark">বুকমার্ক</string>
+    <string name="nav_login">লগ ইন</string>
+    <string name="nav_change_password">পাসওয়ার্ড পরিবর্তন</string>
+
 </resources>

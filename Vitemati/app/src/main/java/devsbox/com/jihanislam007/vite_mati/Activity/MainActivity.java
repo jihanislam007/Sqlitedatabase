@@ -1,5 +1,7 @@
 package devsbox.com.jihanislam007.vite_mati.Activity;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -7,10 +9,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.support.v7.widget.ViewUtils;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import devsbox.com.jihanislam007.vite_mati.Fragment.DashBoardFragment;
+import devsbox.com.jihanislam007.vite_mati.Fragment.LandListFragment;
+import devsbox.com.jihanislam007.vite_mati.Fragment.LandPostFragment;
 import devsbox.com.jihanislam007.vite_mati.R;
 
 public class MainActivity extends AppCompatActivity
@@ -68,7 +74,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -81,7 +87,7 @@ public class MainActivity extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -89,17 +95,40 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.dashboard) {
 
-        } else if (id == R.id.nav_slideshow) {
+            DashBoardFragment dashBoardFragment = new DashBoardFragment();
+            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.frag_container, dashBoardFragment).commit();
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.LandNewPost) {
 
-        } else if (id == R.id.nav_share) {
+            LandPostFragment landPostFragment = new LandPostFragment();
+            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.frag_container, landPostFragment).commit();
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.SoldLandList) {
+
+            LandListFragment landListFragment = new LandListFragment();
+            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.frag_container, landListFragment).commit();
+
+        } else if (id == R.id.unsoldLandList) {
+
+            LandListFragment landListFragment = new LandListFragment();
+            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.frag_container, landListFragment).commit();
+
+        } else if (id == R.id.buyerLandList) {
+
+            LandListFragment landListFragment = new LandListFragment();
+            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.frag_container, landListFragment).commit();
+
+        } else if (id == R.id.communication) {
+            Toast.makeText(this, "Under Construction", Toast.LENGTH_SHORT).show();
+        }else if (id == R.id.share) {
+            Toast.makeText(this, "Under Construction", Toast.LENGTH_SHORT).show();
 
         }
 

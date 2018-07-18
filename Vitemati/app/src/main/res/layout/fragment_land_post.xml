@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.LandPostFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:id="@+id/ownerDetail"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:text="@string/owner_detail_title"
+                android:textAlignment="center"
+                android:textColor="@color/m"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="68dp">
+
+                <EditText
+                    android:id="@+id/editTextSellerName"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/land_owner_name"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_SellerPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="341dp">
+
+                <EditText
+                    android:id="@+id/editTextSellerPhone"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/contact_number"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_SellerNID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="341dp">
+
+                <EditText
+                    android:id="@+id/editTextSellerNID"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/nid_number"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_SellerEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="341dp">
+
+                <EditText
+                    android:id="@+id/editTextSellerEmail"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/email_address"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/landAddress"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:text="@string/land_address_title"
+                android:textAlignment="center"
+                android:textColor="@color/m"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_width="334dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sellerDivision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/land_division_name"
+                    android:textAlignment="center"
+                    android:textColor="@color/m"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    tools:layout_editor_absoluteX="169dp"
+                    tools:layout_editor_absoluteY="125dp" />
+
+                <TextView
+                    android:id="@+id/sellerDistrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/sellerDivision"
+                    android:layout_alignStart="@+id/sellerDivision"
+                    android:layout_below="@+id/sellerDivision"
+                    android:text="@string/land_district_name"
+                    android:textAlignment="center"
+                    android:textColor="@color/m"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    tools:layout_editor_absoluteX="73dp"
+                    tools:layout_editor_absoluteY="422dp" />
+
+                <TextView
+                    android:id="@+id/sellerPoliceStation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/sellerDistrict"
+                    android:layout_alignStart="@+id/sellerDistrict"
+                    android:layout_below="@+id/sellerDistrict"
+                    android:text="@string/land_police_station_name"
+                    android:textAlignment="center"
+                    android:textColor="@color/m"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    tools:layout_editor_absoluteX="169dp"
+                    tools:layout_editor_absoluteY="125dp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/sellerDivision"
+                    android:layout_toEndOf="@+id/sellerDivision"
+                    android:layout_toRightOf="@+id/sellerDivision" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/spinner"
+                    android:layout_alignStart="@+id/spinner"
+                    android:layout_below="@+id/sellerDivision" />
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/spinner2"
+                    android:layout_alignStart="@+id/spinner2"
+                    android:layout_below="@+id/sellerDistrict" />
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_HouseNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="177dp">
+
+                <EditText
+                    android:id="@+id/editTextHouseNo"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/land_house_no"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_RoadNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="177dp">
+
+                <EditText
+                    android:id="@+id/editTextRoadNo"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/land_road_no"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Village"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="177dp">
+
+                <EditText
+                    android:id="@+id/editTextVillage"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/land_village_name"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_PostOffice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="177dp">
+
+                <EditText
+                    android:id="@+id/editTextPostOffice"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/land_post_office"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Union"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="177dp">
+
+                <EditText
+                    android:id="@+id/editTextUnion"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/land_union"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/landDetail"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:text="@string/land_detail_title"
+                android:textAlignment="center"
+                android:textColor="@color/m"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="290dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/landType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/land_type"
+                    android:textAlignment="center"
+                    android:textColor="@color/m"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    tools:layout_editor_absoluteX="169dp"
+                    tools:layout_editor_absoluteY="125dp" />
+
+                <Spinner
+                    android:id="@+id/spinner4"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/landType"
+                    android:layout_toEndOf="@+id/landType"
+                    android:layout_toRightOf="@+id/landType" />
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_LandDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="177dp">
+
+                <EditText
+                    android:id="@+id/editTextLandDetail"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:gravity="top|left"
+                    android:hint="@string/land_detail_other"
+                    android:inputType="text"
+                    android:lines="8"
+                    android:maxLines="10"
+                    android:minLines="6"
+                    android:padding="10dp"
+                    android:scrollbars="vertical" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_LandPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="177dp">
+
+                <EditText
+                    android:id="@+id/editTextLandPrice"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/land_price"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Land_Mouza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="231dp">
+
+                <EditText
+                    android:id="@+id/editTextLandMouza"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/land_mouza_no"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Land_JLNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="122dp">
+
+                <EditText
+                    android:id="@+id/editTextLandJLNo"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/land_jl_no"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Khatian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="341dp">
+
+                <EditText
+                    android:id="@+id/editTextKhatian"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/land_khatian_no"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Dag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="396dp">
+
+                <EditText
+                    android:id="@+id/editTextDagNo"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/land_dag_no"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_LandNature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="396dp">
+
+                <EditText
+                    android:id="@+id/editTextLandNature"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/land_nature"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_LandSurrounding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/input_layout_SellerAddress"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="396dp">
+
+                <EditText
+                    android:id="@+id/editTextLandSurrounding"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/addedshape"
+                    android:hint="@string/land_surrounding"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:padding="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@layout/rounded_button_settings"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="271dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
