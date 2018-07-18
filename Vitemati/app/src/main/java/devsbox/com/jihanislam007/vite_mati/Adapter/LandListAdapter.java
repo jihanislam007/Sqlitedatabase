@@ -25,7 +25,6 @@ public class LandListAdapter extends ArrayAdapter {
         super(mcontext, R.layout.row_custom_listview);
         this.mcontext = mcontext;
         this.landLists = landLists;
-
     }
 
     @Override
